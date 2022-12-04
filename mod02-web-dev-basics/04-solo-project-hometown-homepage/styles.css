@@ -1,0 +1,124 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.activity-img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.activity-img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.activity {
+    width: 200px;
+}
+
+#hero-section {
+    background-image: url("images/buenos-aires.jpg");
+    background-size: cover;
+    height: 340px;
+    padding: 0 40px;
+    margin-bottom: 0;
+}
+
+#hero-heading {
+    position: relative;
+    top: 80px;
+    background: #9A59B5;
+    color: #FFFFFF;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 5px 140px 5px 140px;
+}
+
+#hero-subheading {
+    position: relative;
+    top: 100px;
+    margin: 0 120px;
+    padding: 8px 3px;
+    background: #F54789;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: large;
+}
+
+#activities-section {
+    background-color: #F8CE00;
+    margin-top: 0;
+}
+
+#activities-heading {
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+#top-three {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#guide-section {
+    margin: 40px 160px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    background: #18B596;
+    border-radius: 10px;
+    border-bottom: #9A59B5 solid 8px;
+}
+
+#guide-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.guide-heading {
+    font-size: x-large;
+}
+
+.guide-p {
+    font-style: italic;
+}
+
+footer {
+    background: #F54789;
+    color: #FFFFFF;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+#license {
+    padding: 20px 0;
+}
+
+footer a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+footer a:hover {
+    background: #F8CE00;
+    color: #000000;
+}
