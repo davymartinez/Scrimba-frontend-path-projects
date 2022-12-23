@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Generate a <span id="h1-span">random password</span></h1>
+        <p id="subheader">Never use an insecure password again.</p>
+        <hr>
+        <p id="pw-length-p">Password length (8-16): </p>
+        <input type="range" id="pw-length" name="pw-length" required min="8" max="16" value="12" oninput="rangevalue.value=value">
+        <output id="rangevalue"></output>
+        <button onclick="passGen()">Generate passwords</button>
+        <hr>
+        <div id="pw-box-container">
+            <div class="pw-box">
+                <p class="pw-p" id="pw1" onclick="clickToCopy(event)"></p>
+            </div>
+            <div class="pw-box">
+                <p class="pw-p" id="pw2" onclick="clickToCopy(event)"></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

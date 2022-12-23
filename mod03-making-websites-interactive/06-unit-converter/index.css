@@ -1,0 +1,71 @@
+body {
+    margin: 0 auto;
+    width: 550px;
+    height: 730px;
+    text-align: center;
+}
+
+#header-wrapper {
+    height: 285px;
+    background-color: #6943FF;
+}
+
+h1 {
+    padding-top: 33px;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+#input-box-number {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    height: 83px;
+    width: 117px;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    background-color: #6943FF;
+    font-family: 'Inter', sans-serif;
+    font-size: 58px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 800
+}
+
+button {
+    height: 42px;
+    width: 117px;
+    margin-bottom: 33px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+
+#conversions-wrapper {
+    height: 445px;
+    background-color: #F4F4F4;
+    padding: 36px 25px 0 25px;
+}
+
+.conversion-result {
+    background-color: #FFFFFF;
+    padding-bottom: 8px;
+}
+
+.conversion-header {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px 77px 0 77px;
+}
+
+.conversion-p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
