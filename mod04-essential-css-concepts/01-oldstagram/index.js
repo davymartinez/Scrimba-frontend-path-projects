@@ -30,36 +30,49 @@ const posts = [
 
 const postContent = document.querySelector(".post-content")
 
+function renderUserInfo(post) {
+    return `
+        <section class="user-info">
+            <img src="${post.avatar}" class="post-avatar">
+            <div class="user-and-location">
+                <h1 class="user-full-name">${post.name}</h1>
+                <h2 class="location">${post.location}</h2>
+            </div>
+        </section>
+    `
+}
+
+function renderPostImage(post) {
+    return `
+        <section class="post-image-container">
+            <img class="post-image" src="${post.post}">
+        </section>
+    `
+}
+
+function renderPostBody(post) {
+    return `
+        <section class="post-body">
+            <div class="post-body-icons">
+                <img src="images/icon-heart.png" class="like-icon">
+                <img src="images/icon-comment.png" class="comment-icon">
+                <img src="images/icon-dm.png" class="share-icon">
+            </div>
+            <div class="post-body-text">
+                <p class="like-count">${post.likes} likes</p>
+                <p class="user-comment"><span class="username">${post.username}</span> ${post.comment}</p>
+            </div>
+        </section>
+        <div class="post-separator"></div>
+    `
+}
+
 function renderPosts() {
     postContent.innerHTML = ""
     for (let i = 0; i < posts.length; i++) {
-        postContent.innerHTML += `
-            <section class="user-info">
-                <img src="${posts[i].avatar}" class="post-avatar">
-                <div class="user-and-location">
-                    <h1 class="user-full-name">${posts[i].name}</h1>
-                    <h2 class="location">${posts[i].location}</h2>
-                </div>
-            </section>
-
-            <section class="post-image-container">
-                <img class="post-image" src="${posts[i].post}">
-            </section>
-            
-            <section class="post-body">
-                <div class="post-body-icons">
-                    <img src="images/icon-heart.png" class="like-icon">
-                    <img src="images/icon-comment.png" class="comment-icon">
-                    <img src="images/icon-dm.png" class="share-icon">
-                </div>
-                <div class="post-body-text">
-                    <p class="like-count">${posts[i].likes} likes</p>
-                    <p class="user-comment"><span class="username">${posts[i].username}</span> ${posts[i].comment}</p>
-                </div>
-            </section>
-            <div class="post-separator"></div>
-        `
+        postContent.innerHTML += renderUserInfo(posts[i]) + renderPostImage(posts[i]) + renderPostBody(posts[i])
     }
-} 
+}
+
 
 renderPosts()
