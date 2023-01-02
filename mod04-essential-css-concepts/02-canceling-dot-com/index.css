@@ -1,0 +1,104 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 720px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #003580;
+    color: #ecebe4;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    padding: 24px 30px;
+    position: relative;
+}
+
+.canceling-logo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cancel-icon, .burger-menu {
+    width: 25px;
+    height: 25px;
+}
+
+.cancel-icon {
+    position: absolute;
+    left: 230px;
+    bottom: 28px;
+}
+
+.burger-menu {
+    cursor: pointer;
+    width: 30px;
+}
+
+.header-h1 {
+    padding: 0 25px;
+}
+
+.post {
+    position: relative;
+}
+
+.post-img {
+    width: 100%;
+    margin-bottom: 0;
+    display: block;
+}
+
+.exclusive-banner, .cancel-btn {
+    background-color: #e952de;
+    color:#ecebe4;
+    border: none;
+    font-size: 18px;
+    padding: 12px 24px;
+}
+
+.exclusive-banner {
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    display: flex;
+}
+
+.img-caption {
+    padding: 0 25px;
+}
+
+.cancel-btn {
+    font-weight: 700;
+    margin-right: 24px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.chat-bg {
+    position: fixed;
+    background-color: #16f4d0;
+    border-radius: 50%;
+    bottom: 24px;
+    right: 24px;
+    height: 56px;
+    width: 56px;
+    cursor: pointer;
+    display: flex;
+}
+
+.chat-icon {
+    margin: auto;
+    width: 75%;
+    height: 75%;
+}
