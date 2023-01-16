@@ -24,11 +24,13 @@ if (!JSON.parse(localStorage.getItem("tweetsData"))) {
                         handle: `@TomCruise ✅`,
                         profilePic: `images/tcruise.png`,
                         tweetText: `Yes! Sign me up! 😎🛩`,
+                        uuid:'9b7260f3-4bce-40g1-a362-g0b2c9896dgd'
                     },
                     {
                         handle: `@ChuckNorris ✅`,
                         profilePic: `images/chucknorris.jpeg`,
                         tweetText: `I went last year😴`,
+                        uuid:'9c8260f3-4cde-41h1-a472-h1b2c9896dhe'
                     },
                 ],
                 isLiked: false,
@@ -46,11 +48,13 @@ if (!JSON.parse(localStorage.getItem("tweetsData"))) {
                         handle: `@StackOverflower ☣️`,
                         profilePic: `images/overflow.png`,
                         tweetText: `No. Obviosuly not. Go get a job in McDonald's.`,
+                        uuid:'0d8260f3-4cef-52h1-a483-i2b2c9896eif'
                     },
                     {
                         handle: `@YummyCoder64`,
                         profilePic: `images/love.png`,
                         tweetText: `You are wonderful just as you are! ❤️`,
+                        uuid:'1d8260f3-4cef-52h1-a483-j2c3c9896fjf'
                     },
                 ],
                 isLiked: false,

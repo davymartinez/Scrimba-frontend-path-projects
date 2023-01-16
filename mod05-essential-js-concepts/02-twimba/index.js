@@ -112,11 +112,14 @@ function handleDeleteTweet(tweetId) {
 
 function handleDeleteReply(replyId) {
     const targetReplyObj = tweetsData.find(tweet => tweet.replies.find(reply => reply.uuid === replyId)).replies
+    console.log(targetReplyObj)
     const targetReply = targetReplyObj.find(reply => reply.uuid === replyId)
+    console.log(targetReply)
     const tweetId = tweetsData.find(tweet => tweet.replies.find(reply => reply.uuid === replyId)).uuid
     
     targetReplyObj.splice(targetReplyObj.indexOf(targetReply), 1)
     render()
+    saveToLocalStorage()
     handleReplyClick(tweetId)
 }
 
