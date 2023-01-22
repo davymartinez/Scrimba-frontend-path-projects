@@ -1,0 +1,47 @@
+<!doctype html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="header-h1">David's Diner</h1>
+            <h2 class="header-h2">The best burgers and pizzas in town.</h2>
+        </header>
+        
+        <main>
+            <section id="menu">
+                <!-- Generated dynamically -->
+            </section>
+            <section id="checkout" class="hidden">
+                <h2 class="checkout-h2">Your order</h2>
+                <!-- Generated dynamically -->
+                <div class="order-total">
+                    <!-- Generated dynamically -->
+                </div>
+                <button type="submit" class="order-btn" id="order-btn">Complete order</button>
+            </section>
+            <div class="overlay hidden">
+                <section id="payment-modal" class="hidden">
+                    <h2 id="modal-h2">Enter card details</h2>
+                    <form id="payment-form">
+                        <input type="text" name="cardName" placeholder="Enter your name" class="card-details" id="card-name" required>
+                        <input type="tel" name="cardNumber" placeholder="Enter card number (xxxx xxxx xxxx xxxx)" class="card-details"
+                            id="card-number" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" required>
+                        <input type="text" name="ccv" placeholder="Enter CVV" class="card-details" id="card-cvv" inputmode="numeric"
+                            maxlength="3" required>
+                        <button type="submit" id="payment-btn">Pay</button>
+                    </form>
+                </section>
+            </div>
+            <section id="thanks-msg" class="hidden">
+                <!-- Generated dynamically -->
+            </section>
+        </main>
+
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>

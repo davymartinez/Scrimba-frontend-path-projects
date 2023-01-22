@@ -1,0 +1,216 @@
+body {
+    margin: 0 auto;
+    width: 600px;
+}
+
+header {
+    background-image: url("images/hamburger.jpg");
+    background-size: cover;
+    background-position: 50% 66%;
+    height: 167px;
+    font-family: 'Smythe', cursive;
+    color: #FFFFFF;
+}
+
+.header-h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding-top: 46px;
+    padding-left: 46px;
+}
+
+.header-h2 {
+    font-size: 22px;
+    padding-left: 46px;
+    margin-top: 4px;
+}
+
+#menu {
+    margin-top: 67px;
+}
+
+.menu-item {
+    display: flex;
+    margin: 45px auto;
+    font-family: 'Smythe', cursive;
+    height: 140px;
+    width: 508px;
+    border-bottom: solid 1px #D2D2D2;
+}
+
+.item-icon {
+    font-size: 78px;
+    opacity: 72%;
+}
+
+.menu-text {
+    width: 358px;
+    padding-left: 30px;
+}
+
+.item {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.ingredients {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: #8B8B8B;
+}
+
+.price {
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.add-btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    align-self: normal;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: 1px solid #DEDEDE;
+    height: 50px;
+    width: 50px;
+}
+
+#checkout {
+    margin: 0 auto;
+    width: 508px;
+}
+
+#checkout, .checkout-h2 {
+    font-family: 'Smythe', cursive;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.checkout-h2 {
+    text-align: center;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+}
+
+.item-button-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.added-checkout-item {
+    font-size: 28px;
+}
+
+.remove-item {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #8B8B8B;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.item-price {
+    align-content: flex-end;
+    font-size: 20px;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #393333;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.order-btn {
+    width: 508px;
+    height: 60px;
+    border: none;
+    background-color: #16DB99;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#payment-modal {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    width: 524px;
+    height: 542px;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 8px 4px #666;
+}
+
+#modal-h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+input {
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1.3px solid #757575;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+input, #payment-btn {
+    width: 476px;
+    height: 71px;
+}
+
+#payment-btn {
+    border: none;
+    background-color: #16DB99;
+    font-size: 20px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    margin-top: 48px;
+    padding: 0;
+}
+
+#thanks-msg {
+    display: flex;
+    align-items: center;
+    margin: 45px auto;
+    width: 504px;
+    height: 120px;
+    background-color: #ECFDF5;
+    color: #065F46;
+    font-family: 'Smythe', cursive;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+#thanks {
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}
