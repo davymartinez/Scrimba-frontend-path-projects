@@ -1,0 +1,212 @@
+/* Palette: https://coolors.co/ffffff-e8dbd2-d0b6a5-c4ac79-b7a14d-79673d-3b2d2c-271d1a-120d08-28231e */
+
+body {
+    color: #120D08;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0;
+}
+
+/* ----- TYPOGRAPHY ----- */
+
+h1, 
+h3 {
+    margin: 0;
+}
+
+h1 {
+    color: #E8DBD2;
+    font-size: 1.75rem;
+}
+
+h2 {
+    color: #79673D;
+    font-size: 1.375rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.subheading {
+    display: block;
+    font-size: 1rem;
+    color: #B7A14D;
+}
+
+.section-two h2 {
+    color: inherit;
+}
+
+/* ----- LINKS ----- */
+
+a {
+    color: #B7A14D;
+    text-decoration: underline dotted; 
+}
+
+a:hover, 
+a:active {
+    color: #C4AC79;
+}
+
+.btn {
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    border-radius: 4.6px;
+}
+
+.btn-dark {
+    color: #E8DBD2;
+    background: #79673D;
+}
+
+.btn-mid {
+    color: #79673D; 
+    background: #E8DBD2; 
+}
+
+.btn-light {
+    color: #79673D; 
+    background: #D0B6A5;
+}
+
+.btn:hover, 
+.btn:active {
+    color: #3B2D2C;
+    background-color: #B7A14D;
+}
+
+/* ----- LAYOUT ----- */
+
+header, 
+section, 
+footer {
+    padding: 1.25em 0;
+}
+
+header, 
+.section-two {
+    background-color: #120D08;
+}
+
+.section-two {
+    color: #E8DBD2;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+    max-width: 640px;
+    margin: 0 auto 2em;
+}
+
+.section-two-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.feature-image {
+    width: 100%;
+    border-radius: 4.6px;
+}
+
+.feature-item {
+    flex: 1 260px;
+}
+
+footer {
+    text-align: center;
+    color: #28231E;
+}
+
+/* ----- NAVIGATION ----- */
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 0.85em 0;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1.5em;
+    }
+ 
+    li:not(:last-child) {
+        border-bottom: 1px dotted #D0B6A5;
+    }  
+}
+
+@media (min-width: 768px) {
+    header,
+    section,
+    footer {
+        padding: 2.875em 0;        
+    }
+    
+    header .container,
+    nav ul {
+        display: flex;
+    }
+    
+    header .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-left: 1.25em;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+    
+    h1 {
+        font-size: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .subheading {
+        font-size: 1.25rem;
+    }
+    
+    p {
+        font-size: 1.125rem;
+    }
+}
