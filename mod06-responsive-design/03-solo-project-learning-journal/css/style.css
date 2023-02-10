@@ -1,0 +1,421 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e5e7eb;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #fafafa;
+}
+
+/* Navbar section */
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 54px;
+    background-color: #fff;
+}
+
+nav, 
+.logo {
+    align-items: center;
+}
+
+.logo {
+    gap: 5px;
+}
+
+.nav-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.logo, 
+nav li {
+    display: inline-flex;
+}
+
+.logo h1, 
+nav ul {
+    margin: 0;
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+nav li {
+    justify-content: space-around;
+    padding-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #090909;
+}
+
+/* Hero section */
+
+.hero-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("../images/thomas-tastet-hSODeSbvzE0-unsplash.jpg");
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 420px;
+    padding-bottom: 60px;
+    gap: 10px;
+    color: #fff;
+    /* text-shadow: #F9FAFB 1px 0 4px; */
+}
+
+.hero-post, 
+.post-header,
+.about-header {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.post-header {
+    margin: 70px 120px 0 120px;
+    color: #151515;
+}
+
+.hero-post .header-date, 
+.hero-post .header-h1, 
+.hero-post .header-p {
+    margin: 0 54px;
+}
+
+.post-header .header-date {
+    margin-bottom: 24px;
+    font-weight: 200;
+}
+
+.post-header .header-h1 {
+    margin-bottom: 27px;
+}
+
+.post-header .header-p,
+.about-header .header-p {
+    margin-bottom: 36px;
+    max-width: 100%;
+}
+
+.header-date {
+    font-weight: 200;
+}
+
+.header-h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.header-p {
+    max-width: 614px;
+}
+
+.about-header {
+    display: grid;
+    margin: 70px 120px 0 54px;
+    grid-template-columns: 184px auto;
+    align-items: center;
+    column-gap: 33px;
+}
+
+.about-header .header-h1 {
+    margin-bottom: 0;
+}
+
+
+.about-header-img {
+    height: 182px;
+    width: 182px;
+    border-radius: 50%;
+    grid-row: 1 / 3;
+}
+
+/* Post image */
+
+.post-img-wrapper {
+    margin: 0 54px;
+}
+
+.post-img {
+    display: flex;
+    width: 100%;
+    max-height: 480px;
+    }
+
+/* Main section */
+
+main, .more {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin: 54px 54px 32px 54px;
+}
+
+main, 
+.blog-article,
+.view-more,
+.about-me-text,
+.more {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+}
+
+.article-date {
+    margin: 0.875rem 0;
+    font-weight: 200;
+}
+
+.article-date, 
+.view-more {
+    font-size: 0.875em;
+}
+
+.article-title {
+    margin: 0;
+}
+
+.article-title a {
+    text-decoration: none;
+    color: #090909;
+}
+
+.article-p {
+    margin: 0.5625rem 0;
+}
+
+.blog-article {
+    font-size: 1.125rem;
+    margin: 36px 120px 72px 120px;
+    line-height: 1.4375rem;
+    color: #151515;
+}
+
+.blog-article h2 {
+    line-height: 1.875rem;
+}
+
+.about-me-text {
+    margin: 36px 120px 72px 120px;
+    line-height: 1.4375rem;
+    color: #151515;
+}
+
+.about-me-text h2 {
+    font-size: 1.25rem;
+}
+
+.view-more {
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Recent posts */
+
+.recent-posts-h2,
+.recent-posts-container {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.recent-posts-h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.recent-posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin: 54px 54px 32px 54px;
+}
+
+/* Footer section */
+
+footer {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 105px;
+    background-color: #202020;
+}
+
+.footer-container {
+    padding: 18px 0;
+}
+
+footer h4 {
+    color: #ececec;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+footer p {
+    color: #d7d7d7;
+    font-weight: 400;
+    margin-top: 1.5px;
+}
+
+footer h4, footer p {
+    font-size: 0.75em;
+}
+
+/* Media queries */
+
+@media(max-width: 800px) {
+    nav,
+    .hero-post .header-date, 
+    .hero-post .header-h1, 
+    .hero-post .header-p,
+    .post-header,
+    .post-img-wrapper {
+        margin: 0 27px;
+    }
+
+    .blog-article,
+    .about-me-text {
+        margin: 36px 27px;
+    }
+
+    .about-header .header-h1 {
+        font-size: 2rem;
+    }
+
+    main, 
+    .recent-posts-container,
+    .more {
+        margin: 27px 27px 32px 27px;
+    }
+}
+
+@media(max-width: 618px) {
+    nav {
+        margin: 0 20px;
+    }
+    .nav-links {
+        padding-left: 20px;
+    }
+    .nav-item {
+        padding-left: 10px;
+    }
+
+    main,
+    .recent-posts-container,
+    .more {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-header {
+        margin: 27px 27px 32px 27px;
+    }
+
+    .about-header .header-h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 462px) {
+    nav {
+        margin: 0 10px;
+    }
+    .nav-links {
+        padding-left: 15px;
+    }
+
+    .hero-post {
+        height: 290px;
+        padding-bottom: 25px;
+    }
+
+    .header-date {
+        font-size: 0.75rem;
+    }
+
+    .header-h1 {
+        font-size: 2em;
+    }
+
+    .about-header {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    main,
+    .recent-posts-container,
+    .more {
+        grid-template-columns: auto;
+    }
+}
+
+@media(max-width: 440px) {
+    .container {
+        max-width: 414px;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    .nav-title {
+        font-size: 1rem;
+    }
+
+    .nav-item {
+        font-size: 0.75rem;
+    }
+
+    .hero-post .header-date, 
+    .hero-post .header-h1, 
+    .hero-post .header-p,
+    .post-article,
+    .about-me-text {
+        margin: 0 20px;
+    }
+
+    .about-header {
+        margin: 70px 20px 0 20px;
+    }
+
+    .header-p {
+        font-weight: 400;
+    }
+
+    .post-img {
+        max-height: 190px;
+    }
+
+    main, 
+    .recent-posts-container,
+    .more {
+        margin: 27px 0px 32px 0px;
+    }
+
+    .blog-article,
+    .blog-article h2 {
+        font-size: 1rem;
+    }
+}
