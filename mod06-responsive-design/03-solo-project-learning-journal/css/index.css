@@ -1,0 +1,200 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #e5e7eb;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #fafafa;
+}
+
+/* Navbar section */
+
+nav {
+    height: 80px;
+    display: grid;
+    grid-template-columns: 54px repeat(3, 1fr) 54px;
+    background-color: #fff;
+}
+
+nav, 
+.logo {
+    grid-column: 2 / 3;
+    align-items: center;
+}
+
+.logo {
+    gap: 5px;
+}
+
+.nav-title {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo, 
+nav > li {
+    display: inline-flex;
+}
+
+.logo > h1, 
+nav > ul {
+    margin: 0;
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+.nav-links {
+    grid-column: 4 / 5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: #090909;
+}
+
+.hero-post {
+    display: grid;
+    grid-template-columns: 54px repeat(6, 1fr) 54px;
+    grid-template-rows: 260px 40px 60px 60px 60px;
+    background-image: url("../images/thomas-tastet-hSODeSbvzE0-unsplash.jpg");
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 480px;
+    color: #fff;
+}
+
+.header-date {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    font-weight: 200;
+}
+
+.header-h1 {
+    grid-column: 2 / 7;
+    grid-row: 3 / 4;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.header-p {
+    grid-column: 2 / 6;
+    grid-row: 4 / 5;
+}
+
+.header-h1, 
+.header-p,
+.article-title {
+    margin: 0;
+}
+
+/* Main section */
+
+main, .more {
+    display: grid;
+    grid-template-columns: 27px repeat(6, 1fr) 27px;
+    gap: 27px;
+    margin: 54px 0 32px 0;
+}
+
+#blog-1, 
+#blog-4, 
+#blog-7 {
+    grid-column: 2 / 4;
+}
+
+#blog-2, 
+#blog-5, 
+#blog-8 {
+    grid-column: 4 / 6;
+}
+
+#blog-3, 
+#blog-6, 
+#blog-9 {
+    grid-column: 6 / 8;
+}
+
+.hidden {
+    display: none;
+}
+
+main,
+.view-more,
+.more,
+.hero-post,
+.nav-links,
+footer {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.article-img {
+    width: 100%;
+    height: auto;
+}
+
+.article-date {
+    margin: 0.875rem 0;
+    font-weight: 200;
+}
+
+.article-date, 
+.view-more {
+    font-size: 0.875em;
+}
+
+.article-title a {
+    text-decoration: none;
+    color: #090909;
+}
+
+.view-more {
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Footer section */
+
+footer {
+    text-align: center;
+    height: 105px;
+    background-color: #202020;
+}
+
+.footer-container {
+    padding: 18px 0;
+}
+
+footer h4 {
+    color: #ececec;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+footer p {
+    color: #d7d7d7;
+    font-weight: 400;
+    margin-top: 1.5px;
+}
+
+footer h4, 
+footer p {
+    font-size: 0.75em;
+}
