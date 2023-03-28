@@ -1,0 +1,129 @@
+/* Figma file: https://www.figma.com/file/iv9suPC8TyEiS5ss0IvN5J/Color-Scheme-Generator-(Copy)?node-id=0-1&t=090Vfwi2EZtHQQXm-0 */
+
+html,
+body,
+#container {
+    margin: 0 auto;
+}
+
+html, 
+body {
+    text-align: center;
+    padding: 0;
+    background-color: #1C1C1C;
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+.instructions {
+    color: white;
+}
+
+.instructions {
+    font-size: 14px;
+}
+
+#container,
+#generator-header,
+#color-container,
+#generator-footer {
+    display: flex;
+}
+
+#container {
+    flex-direction: column;
+    height: 550px;
+    width: 550px;
+}
+
+#generator-header,
+#mode-select,
+#get-color-btn,
+#generator-footer {
+    background-color: white;
+}
+
+#generator-header,
+#generator-footer {
+    align-items: center;
+    justify-content: space-around;
+}
+
+#generator-header {
+    height: 90px;
+    box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+#color-picker,
+#mode-select,
+#get-color-btn {
+    border: 1px solid #D1D5DB;
+    height: 42px;
+}
+
+#color-picker {
+    width: 61px;
+}
+
+#mode-select,
+#get-color-btn {
+    border-radius: 5px;
+}
+
+#mode-select {
+    width: 312px;
+}
+
+#get-color-btn,
+#generator-footer {
+    font-size: 12px;
+}
+
+#get-color-btn {
+    width: 123px;
+}
+
+#color-bar {
+    height: 415px;
+    width: 110px;
+}
+
+#generator-footer {
+    height: 45px;
+    color: #111827;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+}
+
+#modal-close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

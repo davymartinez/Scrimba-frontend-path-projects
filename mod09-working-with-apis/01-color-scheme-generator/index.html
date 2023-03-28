@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>Color Scheme Generator</title>
+</head>
+<body>
+    <h1>Color Scheme Generator</h1>
+    <p class="instructions">Click on the color picker on the left to select a color</p>
+    <p class="instructions">Click on any color of the palette to copy its hex value to clipboard</p>
+    <div id="container">
+        <div id="generator-header">
+            <input type="color" id="color-picker">
+            <select name="mode" id="mode-select">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+
+            </select>
+            <button id="get-color-btn">Get color scheme</button>
+        </div>
+        <div id="color-container">
+            <div id="color-bar" style="background-color: #03407C;"></div>
+            <div id="color-bar" style="background-color: #045AAF;"></div>
+            <div id="color-bar" style="background-color: #0373E2;"></div>
+            <div id="color-bar" style="background-color: #1C8DFD;"></div>
+            <div id="color-bar" style="background-color: #4DA6FE;"></div>
+        </div>
+        <div id="generator-footer">
+            <div id="hex">#03407C</div>
+            <div id="hex">#045AAF</div>
+            <div id="hex">#0373E2</div>
+            <div id="hex">#1C8DFD</div>
+            <div id="hex">#4DA6FE</div>
+        </div>
+        <div id="modal">
+            <div id="modal-content">
+                <span id="modal-close-btn">&times;</span>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
