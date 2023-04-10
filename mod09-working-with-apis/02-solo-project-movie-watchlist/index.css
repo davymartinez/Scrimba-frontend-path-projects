@@ -1,0 +1,228 @@
+html,
+body, 
+#container {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+#container {
+    margin: 7.5vh auto;
+    height: 780px;
+    width: 550px;
+    background-color: #121212;
+    overflow: scroll;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(img/header-image.png);
+    height: 208px;
+}
+
+#header-h1, #header-p {
+    color: #fff;
+}
+
+#header-h1 {
+    font-weight: 800;
+}
+
+#header-p, #empty-state-p {
+    font-weight: 700;
+}
+
+#header-p {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#search {
+    position: relative;
+    top: -1.25em;
+}
+
+#search-form {
+    display: flex;
+    justify-content: space-around;
+    height: 38px;
+    width: 462px;
+    margin: 0 auto;
+}
+
+.search-icon {
+    background-image: url(img/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+
+}
+
+#title-field {
+    width: 342px;
+    color: #a5a5a5;
+    background-color: #2e2e2f;
+    border: none;
+    padding-left: 36px;
+}
+
+#search-btn {
+    width: 120px;
+    color: #fff;
+    background-color: #4b4b4b;
+    border: none;
+}
+
+#empty-state-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 210px;
+}
+
+#empty-state-p {
+    color: #2e2e2f;
+}
+
+#film-list,
+#watchlist-film-list {
+    display: flex;
+    justify-content: center;
+}
+
+#watchlist-film-list {
+    flex-direction: column;
+}
+
+#film-item-container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 40px 44px 0;
+}
+
+#film-item {
+    display: flex;
+}
+
+#film-poster-container {
+    margin-right: 10px;
+}
+
+#film-poster {
+    width: 99px;
+}
+
+#film-info-container {
+    margin-left: 10px;
+}
+
+#film-info-header {
+    margin-top: 14px;
+}
+
+#film-info-header,
+#film-info-subheader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#film-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#film-title,
+#film-rating,
+#film-runtime,
+#film-genre,
+#watchlist-add {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#film-rating {
+    margin-left: 10px;
+}
+
+#film-rating,
+#film-info-subheader {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#film-info-subheader {
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#watchlist-btn {
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 18px;
+    width: 18px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#film-plot {
+    color: #a5a5a5;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+hr {
+    color: #2c2c2c;
+    width: 90%;
+}
+
+#watchlist-film-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#empty-watchlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40%;
+}
+
+#empty-watchlist-p,
+#no-results-msg-p {
+    color: #787878;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#empty-watchlist-cta {
+    display: flex;
+    align-items: center;
+}
+
+#no-results-msg {
+    display: flex;
+    text-align: center;
+    margin-top: 40%;
+}
+
+#plus-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+
+#empty-watchlist-cta-p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
