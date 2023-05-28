@@ -115,5 +115,82 @@ hr {
     font-size: 16px;
     color: #55F991;
     margin: 0 auto;
-    padding: 6px 32px;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+@media (max-width: 560px) {
+    #container {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+    }
+    hr {
+        width: 75%;
+        margin: 17px auto;
+    }
+    #pw-gen-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 490px) {
+    #container {
+        margin: 0 auto;
+    }
+    h1 {
+        padding-top: 55px;
+        font-size: 8vw;
+    }
+    #subheader {
+        font-size: 4vw;
+    }
+    #pw-box-container {
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 12%;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        padding-top: 25px;
+    }
+    h1, 
+    #subheader {
+        display: flex;
+        padding-left: 26px;
+        padding-right: 26px;
+        flex-direction: column;
+    }
+    #input-output-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #pw-length-p,
+    #rangevalue {
+        font-size: 5vw;
+    }
+    #pw-length {
+        width: 50%;
+    }
+    #rangevalue {
+        padding-left: 52px;
+    }
+    button {
+        width: 50vw;
+        font-size: 4.5vw;
+    }
+    #pw-box-container {
+        align-items: center;
+        margin: 0 auto;
+    }
+    .pw-box {
+        width: 65vw;
+    }
+    #pw1, 
+    #pw2 {
+        font-size: 4.5vw;
+    }
 }

@@ -11,14 +11,24 @@
 </head>
 <body>
     <div id="container">
-        <h1>Generate a <span id="h1-span">random password</span></h1>
-        <p id="subheader">Never use an insecure password again.</p>
+        <div id="header">
+            <h1>Generate a <span id="h1-span">random password</span></h1>
+            <p id="subheader">Never use an insecure password again.</p>
+        </div>
+        
         <hr>
-        <p id="pw-length-p">Password length (8-16): </p>
-        <input type="range" id="pw-length" name="pw-length" required min="8" max="16" value="12" oninput="rangevalue.value=value">
-        <output id="rangevalue"></output>
-        <button onclick="passGen()">Generate passwords</button>
+        
+        <div id="pw-gen-container">
+            <p id="pw-length-p">Password length (8-16): </p>
+            <div id="input-output-container">
+                <input type="range" id="pw-length" name="pw-length" required min="8" max="16" value="12" oninput="rangevalue.value=value">
+                <output id="rangevalue"></output>
+            </div>
+            <button onclick="passGen()">Generate passwords</button>
+        </div>
+        
         <hr>
+        
         <div id="pw-box-container">
             <div class="pw-box">
                 <p class="pw-p" id="pw1" onclick="clickToCopy(event)"></p>
